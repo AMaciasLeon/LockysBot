@@ -1,6 +1,6 @@
 # APUNTES DE LOCKY'S BOT
 >Made by @LexDev 
-
+[![Python](https://img.shields.io/badge/Python-3.10+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
 
 ## **TOKEN**
 <p>Un token de Discord es una clave secreta utilizada para autenticar y autorizar un bot para conectarse y interactuar con un servidor de Discord. Es esencial para que el bot pueda enviar y recibir mensajes, modificar canales y realizar otras acciones en el servidor. El token debe mantenerse privado y no debe compartirse con nadie, ya que cualquier persona que lo tenga podría utilizarlo para controlar el bot.</p>
