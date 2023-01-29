@@ -6,7 +6,7 @@
 <p>Un token de Discord es una clave secreta utilizada para autenticar y autorizar un bot para conectarse y interactuar con un servidor de Discord. Es esencial para que el bot pueda enviar y recibir mensajes, modificar canales y realizar otras acciones en el servidor. El token debe mantenerse privado y no debe compartirse con nadie, ya que cualquier persona que lo tenga podría utilizarlo para controlar el bot.</p>
 
 ```py
-token = "MTA2Mjg0NDIzMTc0MTM2MjE4Ng.GUbpV9.qMgj7Fe-7UZqaoo4723LLROOs7bkTKzSrPjpH8"
+token = "TOKEN"
 ```
 
 ## **INTENTS**
