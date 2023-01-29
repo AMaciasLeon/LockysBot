@@ -4,7 +4,7 @@ import discord
 import math
 import random
 
-token = "MTA2Mjg0NDIzMTc0MTM2MjE4Ng.GUbpV9.qMgj7Fe-7UZqaoo4723LLROOs7bkTKzSrPjpH8"
+token = "TOKEN"
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='/', intents=intents)
