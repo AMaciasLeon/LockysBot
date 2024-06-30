@@ -184,7 +184,7 @@ async def elimina(ctx, cantidad: int):
 bot.run(token)
 ```
 
-### Configuración de CI/CD
+## Configuración de CI/CD
 
 Este proyecto está configurado para utilizar GitHub Actions como herramienta de integración continua y entrega continua (CI/CD). A continuación se detallan las etapas que se ejecutan automáticamente cada vez que se realiza un commit en la rama `main` del repositorio:
 
@@ -193,7 +193,7 @@ Este proyecto está configurado para utilizar GitHub Actions como herramienta de
 - **Análisis de Calidad de Código**: Utiliza SonarCloud para revisar la calidad del código y proporcionar métricas detalladas.
 - **Despliegue Automatizado**: Configurado para desplegar automáticamente a un entorno de producción (si está disponible y configurado).
 
-### Ejecución Local
+## Ejecución Local
 
 Para ejecutar el bot localmente en tu máquina:
 
@@ -205,7 +205,7 @@ Para ejecutar el bot localmente en tu máquina:
    ```
 
 
-### Contribución ###
+## Contribución 
 
 Si deseas contribuir al proyecto, sigue estos pasos:
 
@@ -231,4 +231,5 @@ Si deseas contribuir al proyecto, sigue estos pasos:
     ```
 
 5. **Sube tus cambios a GitHub**:
-    Crea un pull request en GitHub para que tu contribución sea revisada y fusionada.
+   
+    <p>Crea un pull request en GitHub para que tu contribución sea revisada y fusionada.</p>
