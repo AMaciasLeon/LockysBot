@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          pytest
+
+      - name: Set up SonarQube
+        uses: sonarsource/sonarcloud-github-action@v1
+        with:
+          projectKey: 'amacias123'
+          organization: 'amacias123'
+          token: ${{ 7a024ed9e82331c840299e872796fc0199ddde1d }}
+
+      - name: Run SonarQube analysis
+        run: |
+          sonar-scanner
