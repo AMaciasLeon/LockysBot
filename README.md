@@ -183,3 +183,52 @@ async def elimina(ctx, cantidad: int):
     await ctx.send(f"Los siguiente mensajes fueron eliminados: {deleted_messages}")    
 bot.run(token)
 ```
+
+### Configuración de CI/CD
+
+Este proyecto está configurado para utilizar GitHub Actions como herramienta de integración continua y entrega continua (CI/CD). A continuación se detallan las etapas que se ejecutan automáticamente cada vez que se realiza un commit en la rama `main` del repositorio:
+
+- **Compilación**: Se construye el proyecto para asegurar que no haya errores de compilación.
+- **Pruebas Unitarias**: Se ejecutan pruebas unitarias para verificar la funcionalidad del código.
+- **Análisis de Calidad de Código**: Utiliza SonarCloud para revisar la calidad del código y proporcionar métricas detalladas.
+- **Despliegue Automatizado**: Configurado para desplegar automáticamente a un entorno de producción (si está disponible y configurado).
+
+### Ejecución Local
+
+Para ejecutar el bot localmente en tu máquina:
+
+1. **Clona este repositorio**:
+   ```bash
+   git clone https://github.com/AMaciasLeon/LockysBot
+   cd LockysBot
+   pip install -r requirements.txt
+   ```
+
+
+### Contribución ###
+
+Si deseas contribuir al proyecto, sigue estos pasos:
+
+1. **Clona el repositorio**:
+    ```bash
+    git clone https://github.com/AMaciasLeon/LockysBot
+    cd LockysBot
+    ```
+
+2. **Crea una nueva rama para tu contribución**:
+    ```bash
+    git checkout -b nombre-de-la-rama
+    ```
+
+3. **Haz cambios y realiza un commit**:
+    ```bash
+    git commit -am "Descripción breve de la nueva funcionalidad"
+    ``` 
+
+4. **Sube tus cambios**:
+    ```bash
+    git push origin nombre-de-la-rama
+    ```
+
+5. **Sube tus cambios a GitHub**:
+    Crea un pull request en GitHub para que tu contribución sea revisada y fusionada.
