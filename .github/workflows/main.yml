@@ -1,4 +1,4 @@
-name: CI
+tname: CI
 
 on:
   push:
@@ -32,9 +32,9 @@ jobs:
       - name: Set up SonarQube
         uses: sonarsource/sonarcloud-github-action@v1
         with:
-          projectKey: 'amacias123'
-          organization: 'amacias123'
-          token: ${{ 7a024ed9e82331c840299e872796fc0199ddde1d }}
+          projectKey: ${{ secrets.SONAR_KEY }}
+          organization: ${{ secrets.SONAR_ORG }}
+          token: ${{ secrets.SONAR_TOKEN }}
 
       - name: Run SonarQube analysis
         run: |
